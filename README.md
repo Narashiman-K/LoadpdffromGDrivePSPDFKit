@@ -1,28 +1,68 @@
-# Load PDF files from Google Drive on PSPDFKit viewer. project built with React + TypeScript + Vite
+# LoadpdffromGDrivePSPDFKit
 
-#### Update the Demo license key, Google Client id in .env file, and few paths in the app.tsx 
+This project allows you to load PDF files from Google Drive into the PSPDFKit Viewer. It is built with React, TypeScript, and Vite.
+
+## Prerequisites
+
+- Node.js (version 14 or later)
+- npm (version 6 or later)
 
 ## Getting Started
 
-To get started with the Signing Demo project, follow these steps:
-
-1. Clone the repository from GitHub
-
-2. Open a terminal and navigate to the project directory
-
-3. Install the project dependencies:
-    ```bash
-    npm i
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Narashiman-K/LoadpdffromGDrivePSPDFKit.git
+    cd LoadpdffromGDrivePSPDFKit
     ```
 
-4. Copy the PSPDFKit for Web library assets to the `public` directory:
-    ```bash
+2. Install the project dependencies:
+    ```sh
+    npm install
+    ```
+
+3. Copy the PSPDFKit for Web library assets to the `public` directory:
+    ```sh
     cp -R ./node_modules/pspdfkit/dist/pspdfkit-lib public/pspdfkit-lib
     ```
 
-5. Run the project locally:
-    ```bash
+4. Update the Demo license key, Google Client ID. API ID, PSPDFKit License KEY in the `.env` file, and a few paths in `app.tsx`.
+
+## Running the Development Server
+
+To start the development server, run:
+    ```sh
     npm run dev
     ```
 
-#### Note: Still need to resolve the permission issue while updating the same file with the same fileId to Google Drive. 
+You can now open [http://localhost:5173](http://localhost:5173) in your browser and enjoy!
+
+## Building for Production
+
+To create a production build of the app and serve it:
+    ```sh
+    npm run build
+    npm run preview
+    ```
+Open your browser and navigate to [http://localhost:4173](http://localhost:4173) to see the application in action.
+
+## License
+
+This project is licensed under the BSD license. See the LICENSE file for more details.
+
+## Contributing
+
+Please ensure you have signed our CLA so that we can accept your contributions.
+
+## Support, Issues and License Questions
+
+PSPDFKit offers support for customers with an active SDK license via [PSPDFKit Support](https://pspdfkit.com/support/request/).
+
+Are you [evaluating our SDK](https://pspdfkit.com/try/)? That's great, we're happy to help out! To make sure this is fast, please use a work email and have someone from your company fill out our [sales form](https://pspdfkit.com/sales/).
+
+## About
+
+This project allows you to load PDF files from Google Drive into the PSPDFKit Viewer.
+
+## Author
+
+Narashiman Krishnamurthy
